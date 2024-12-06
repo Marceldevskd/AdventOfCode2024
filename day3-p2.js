@@ -4,6 +4,7 @@ let instructions = "?% mul(948,148)why() %how(670,744)mul(590,32);where())#}from
 let total = 0; 
 let index = 0;
 let doCalculations = true
+
 while (true) {
     const mulI = instructions.indexOf("mul(", index);
     if (mulI < 0) {
@@ -21,6 +22,7 @@ while (true) {
     let num1 = "0";
     let num2 = "0";
     let hadComma = false;
+
     while(true) {
         console.log(instructions[mulI + 4 + j])
         if (isNaN(instructions[mulI + 4 + j])) {
